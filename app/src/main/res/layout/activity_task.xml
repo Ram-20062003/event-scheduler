@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ceffa8"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TASK"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="@font/petrona"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/petrona"
+        android:gravity="center"
+        android:text="Task name"
+        android:background="#aec4f2"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+         />
+
+    <EditText
+        android:id="@+id/task_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:maxLength="15"
+        android:fontFamily="@font/petrona"
+        android:inputType="textPersonName"
+        android:hint="Enter you task upto 15 characters"
+        />
+
+ <TextView
+     android:layout_width="200dp"
+     android:layout_height="40dp"
+     android:text="SET TIME"
+     android:textColor="@color/black"
+     android:gravity="center"
+     android:background="#aec4f2"
+     android:textSize="20dp"
+     android:fontFamily="@font/petrona"/>
+
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#aec4f2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:onClick="set_time"
+        android:text="SAVE"
+        android:textColor="@color/black" />
+</LinearLayout>
